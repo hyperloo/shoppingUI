@@ -859,6 +859,12 @@
 
       .scroll {
         overflow-y: scroll;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        &::-webkit-scrollbar {
+          width: 0px;
+          background: transparent;
+        }
       }
     }
   }
@@ -951,6 +957,13 @@
       align-items: center;
       width: 100%;
       overflow-x: scroll;
+      scrollbar-width: none; /* Firefox */
+      -ms-overflow-style: none;
+
+      &::-webkit-scrollbar {
+        width: 0px;
+        background: transparent; /* make scrollbar transparent */
+      }
 
       .card {
         width: 28rem;
