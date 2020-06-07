@@ -36,7 +36,6 @@ class ProductPage extends Component {
 
   render() {
     const { history, product, loading, error } = this.props;
-    console.log(product);
     return (
       <div className="product">
         <Nav />

@@ -1,0 +1,369 @@
+.sellerPage {
+  padding: 1rem 3rem;
+  height: 100vh;
+  position: relative;
+  overflow-y: scroll;
+
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+  }
+
+  @media (max-width: 992px) {
+    padding: 1rem 1.5rem;
+  }
+  @media (max-width: 768px) {
+    padding: 1rem 1rem;
+  }
+
+  .btns {
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    padding: 0.8rem 1.5rem;
+    border: 1px solid rgba(128, 128, 128, 0.562);
+    border-radius: 4px;
+    font-size: 0.9rem;
+    color: #0f5eea;
+    transition: all 0.1s ease;
+    cursor: pointer;
+
+    @media (max-width: 1200px) {
+      margin: 0.9rem;
+      padding: 0.7rem 1.35rem;
+    }
+    @media (max-width: 992px) {
+      margin: 0.75rem;
+      padding: 0.62rem 1.2rem;
+    }
+    @media (max-width: 768px) {
+      font-size: 0.8rem;
+      margin: 0.68rem;
+      padding: 0.57rem 1rem;
+    }
+    @media (max-width: 576px) {
+      margin: 0.55rem;
+      padding: 0.47rem 0.8rem;
+    }
+
+    &:hover {
+      transform: scale(1.01);
+      opacity: 0.8;
+    }
+  }
+
+  .activeBtn {
+    color: white;
+    background: #0f5eea;
+    border-color: #0f5eea;
+  }
+
+  .nav {
+    width: 100%;
+    padding: 1rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 768px) {
+      display: block;
+      text-align: center;
+    }
+
+    > img {
+      width: 11rem;
+      height: 4.8rem;
+
+      @media (max-width: 1600px) {
+        width: 10.5rem;
+        height: 4.5rem;
+      }
+      @media (max-width: 1200px) {
+        width: 9.75rem;
+        height: 4.15rem;
+      }
+      @media (max-width: 992px) {
+        width: 9rem;
+        height: 3.85rem;
+      }
+      @media (max-width: 768px) {
+        width: 8rem;
+        height: 3.25rem;
+      }
+    }
+
+    .info {
+      display: flex !important;
+      justify-content: space-around;
+      align-items: center;
+
+      > span {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        cursor: pointer;
+        border: none;
+        color: black;
+
+        img {
+          width: 2.5rem;
+          height: 2.5rem;
+          border-radius: 50%;
+          margin: auto 0.5rem;
+
+          @media (max-width: 1600px) {
+            width: 2.4rem;
+            height: 2.4rem;
+          }
+          @media (max-width: 1200px) {
+            width: 2.2rem;
+            height: 2.2rem;
+          }
+          @media (max-width: 992px) {
+            width: 2rem;
+            height: 2rem;
+          }
+          @media (max-width: 768px) {
+            width: 1.8rem;
+            height: 1.8rem;
+          }
+        }
+        .loc {
+          width: 0.8rem !important;
+          height: 1.25rem !important;
+
+          @media (max-width: 1600px) {
+            width: 0.75rem;
+            height: 1.2rem;
+          }
+          @media (max-width: 1200px) {
+            width: 0.65rem;
+            height: 1.15rem;
+          }
+          @media (max-width: 992px) {
+            width: 0.6rem;
+            height: 1.1rem;
+          }
+          @media (max-width: 768px) {
+            width: 0.55rem;
+            height: 1.1rem;
+          }
+        }
+      }
+
+      .activeBtn {
+        color: white;
+      }
+    }
+  }
+
+  .subNav {
+    margin-top: 1.6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+
+    @media (max-width: 768px) {
+      font-size: 0.8rem;
+    }
+
+    > div {
+      display: flex;
+      align-items: center;
+      color: rgba(0, 0, 0, 0.9);
+      span {
+        cursor: pointer;
+        margin: auto 0.5rem;
+
+        > img {
+          width: 1.3rem;
+          height: 1.3re;
+        }
+      }
+    }
+  }
+
+  .sellerList {
+    padding-bottom: 5rem;
+
+    .bar {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      font-size: 0.9rem;
+
+      > span {
+        &:last-child {
+          margin-right: 8rem;
+
+          @media (max-width: 992px) {
+            margin-right: 5rem;
+          }
+          @media (max-width: 768px) {
+            margin-right: 4rem;
+          }
+          @media (max-width: 576px) {
+            margin-right: 3rem;
+          }
+        }
+      }
+    }
+
+    .sellerDiv {
+      .sellerBox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 1rem auto 1.5rem auto;
+
+        .seller {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+
+          > .radio {
+            width: 20px;
+            height: 20px;
+            padding: 3px;
+            border-radius: 50%;
+            border: 2px solid #0f5eea;
+            background: transparent;
+          }
+
+          > .radioActive {
+            > div {
+              width: 100%;
+              height: 100%;
+              background: #0f5eea;
+              border-radius: 50%;
+            }
+          }
+
+          > span {
+            padding: 0.5rem;
+            > img {
+              width: 6.5rem;
+              height: auto;
+              border-radius: 0.5rem;
+
+              @media (max-width: 992px) {
+                width: 6rem;
+                height: auto;
+                border-radius: 0.45rem;
+              }
+              @media (max-width: 768px) {
+                width: 5.75rem;
+                height: auto;
+                border-radius: 0.415rem;
+              }
+              @media (max-width: 576px) {
+                width: 5.5rem;
+                height: auto;
+                border-radius: 0.38rem;
+              }
+            }
+          }
+
+          > div {
+            > span {
+              margin: 0.25rem;
+              font-size: 0.8rem;
+              display: block;
+
+              @media (max-width: 992px) {
+                margin: 0.25rem;
+                font-size: 0.75rem;
+              }
+              @media (max-width: 768px) {
+                margin: 0.2rem;
+                font-size: 0.7rem;
+              }
+              @media (max-width: 576px) {
+                margin: 0.1rem;
+                font-size: 0.65rem;
+              }
+
+              &:first-child {
+                font-size: 0.7rem;
+              }
+
+              &:nth-child(2) {
+                line-height: 8px;
+                color: gray;
+              }
+
+              > span {
+                margin-left: 0.5rem;
+                text-align: center;
+                font-size: 0.65rem;
+                padding: 0.1rem;
+                padding-left: 0.15rem;
+                color: white;
+                border-radius: 2px;
+                background: #027c43;
+              }
+            }
+          }
+        }
+
+        .price {
+          div {
+            display: flex;
+            align-items: center;
+            font-size: 0.75rem;
+            color: rgba(0, 0, 0, 0.5);
+
+            > span {
+              margin: auto 0.5rem;
+
+              &:first-child {
+                color: black;
+                font-weight: 600;
+                font-size: 1.25rem;
+
+                @media (max-width: 768px) {
+                  font-size: 1.15rem;
+                }
+                @media (max-width: 576px) {
+                  font-size: 1.1rem;
+                }
+              }
+            }
+            #off {
+              color: #ff601e;
+              font-size: 0.65rem;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+  }
+  .btnBox {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background: white;
+    box-shadow: 25px 26px 48px gray;
+
+    > span {
+      font-size: 0.8rem;
+
+      > img {
+        margin-right: 0.2rem;
+        height: 0.8rem;
+        width: auto;
+      }
+    }
+  }
+}

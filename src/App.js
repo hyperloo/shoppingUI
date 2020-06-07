@@ -5,7 +5,7 @@ import store from "./store";
 
 import HomePage from "./components/HomePage";
 import ProductPage from "./components/Product/ProductPage";
-import SellersPage from "./components/SellersPage";
+import SellersPage from "./components/Sellers/SellersPage";
 import ErrorPage from "./components/ErrorPage";
 
 import "./App.scss";

@@ -7,12 +7,12 @@ const initialState = {
 
 export default function (state = initialState, action) {
   switch (action.type) {
-    case SELLERS_LOADED:
+    case SELLERS_LOADING:
       return {
         ...state,
         isLoading: true,
       };
-    case SELLERS_LOADING:
+    case SELLERS_LOADED:
       return {
         ...state,
         sellers: action.payload,

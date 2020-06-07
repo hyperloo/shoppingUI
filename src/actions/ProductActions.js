@@ -20,7 +20,6 @@ export const loadProduct = () => (dispatch, getState) => {
       dispatch({ type: PRODUCT_LOADED, payload: res.data.productDetail });
     })
     .catch((err) => {
-      // console.log(err);
       dispatch(returnErrors(err.response.message, err.response.data.status));
     });
 };

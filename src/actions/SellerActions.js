@@ -14,7 +14,7 @@ export const loadSellers = () => (dispatch, getState) => {
       },
     })
     .then((res) =>
-      dispatch({ type: SELLERS_LOADED, payload: res.otherSellerList })
+      dispatch({ type: SELLERS_LOADED, payload: res.data.otherSellerList })
     )
     .catch((err) => {
       dispatch(returnErrors(err.response.message, err.response.status));
