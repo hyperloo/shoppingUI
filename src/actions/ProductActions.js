@@ -7,10 +7,13 @@ export const loadProduct = () => (dispatch, getState) => {
   dispatch({ type: PRODUCT_LOADING });
 
   axios
-    .get("//35.225.50.138:9091/productDetail/", {
+    .get("http://35.225.50.138:9091/productDetail/", {
       params: {
         sellerId: 12,
         productId: 6,
+      },
+      headers: {
+        "Content-Type": "application/json",
       },
     })
     .then((res) => {
