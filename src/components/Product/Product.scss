@@ -1070,8 +1070,13 @@
         color: white;
         background: #0f5eea;
         margin: 1.5rem auto;
+        box-shadow: none;
+        border: none;
         cursor: pointer;
 
+        &:hover {
+          opacity: 0.8;
+        }
         @media (max-width: 768px) {
           margin: 0.75rem auto;
         }
@@ -1083,23 +1088,313 @@
     font-weight: 400 !important;
     margin-top: 3.5rem auto;
     text-align-last: center;
+    padding: 1.5rem;
 
     @media (max-width: 1200px) {
       margin: 3.15rem auto;
     }
     @media (max-width: 992px) {
       margin: 2.6rem auto;
+      padding: 0.75rem;
     }
     @media (max-width: 768px) {
       margin: 2.3rem auto;
+      padding: 0.5rem;
     }
     @media (max-width: 576px) {
+      padding: 0.5rem;
       margin: 2rem auto;
     }
 
     h1,
     h5 {
       font-weight: 400;
+    }
+  }
+
+  .footer {
+    padding: 5rem;
+    padding-bottom: 0rem;
+    font-size: 0.9rem;
+    width: 100%;
+
+    @media (max-width: 1600px) {
+      padding: 4rem;
+      padding-bottom: 0rem;
+    }
+    @media (max-width: 1200px) {
+      padding: 4rem;
+      padding-bottom: 0rem;
+    }
+    @media (max-width: 992px) {
+      padding: 3rem;
+      padding-bottom: 0rem;
+    }
+    @media (max-width: 768px) {
+      padding: 2rem;
+      padding-bottom: 0rem;
+    }
+
+    > .add {
+      width: 20%;
+      display: flex;
+      padding: 1rem;
+      flex-direction: column;
+      float: left;
+      justify-content: center;
+
+      @media (max-width: 992px) {
+        width: 25% !important;
+      }
+      @media (max-width: 576px) {
+        width: 100% !important;
+        padding-bottom: 0;
+      }
+
+      > img {
+        margin: auto;
+        &:first-child {
+          width: 5rem;
+          height: auto;
+        }
+      }
+
+      > p {
+        text-align: center;
+        &:first-child {
+        }
+        margin-bottom: 3rem;
+      }
+    }
+
+    > .follow {
+      width: 40%;
+      float: left;
+      padding: 4rem;
+      padding-top: 1rem;
+
+      @media (max-width: 1600px) {
+        padding: 3.5rem;
+        padding-top: 1rem;
+      }
+      @media (max-width: 1200px) {
+        width: 75% !important;
+        padding: 1rem 3rem;
+      }
+      @media (max-width: 992px) {
+        width: 75% !important;
+        padding: 1rem 3rem;
+      }
+      @media (max-width: 768px) {
+        width: 75% !important;
+        padding: 2.5rem;
+        padding: 1rem 3rem;
+      }
+      @media (max-width: 576px) {
+        width: 100% !important;
+        text-align: center;
+      }
+
+      .us {
+        border-bottom: 1px solid rgba(128, 128, 128, 0.363);
+        border-radius: 1rem;
+        padding-bottom: 1rem;
+
+        @media (max-width: 1200px) {
+          padding: 1rem;
+        }
+
+        > p {
+          font-size: 0.8rem;
+          font-weight: 300;
+          line-height: 1.2rem;
+
+          &:first-child {
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-top: 0px;
+          }
+        }
+
+        > .ico {
+          > img {
+            margin: 0.5rem;
+            cursor: pointer;
+
+            &:hover {
+              opacity: 0.8;
+            }
+          }
+        }
+      }
+
+      .links {
+        display: flex;
+        padding: 1rem 1rem;
+
+        @media (max-width: 992px) {
+          padding: 1rem 1.5rem;
+        }
+        @media (max-width: 768px) {
+          padding: 1rem;
+        }
+
+        @media (max-width: 576px) {
+          text-align: left;
+        }
+
+        > div {
+          width: 50%;
+          position: relative;
+
+          > div {
+            position: absolute;
+            right: 0;
+          }
+          p {
+            font-size: 0.8rem;
+            cursor: pointer;
+            font-weight: 300;
+            margin-bottom: 1.5rem;
+
+            &:hover {
+              opacity: 0.8;
+            }
+
+            &:first-child {
+              font-weight: 500;
+              font-size: 0.9rem;
+            }
+          }
+        }
+      }
+    }
+
+    > .contact {
+      width: 40%;
+      float: right;
+      padding: 4rem;
+      padding-top: 1rem;
+
+      @media (max-width: 1600px) {
+        padding: 3.5rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+      }
+      @media (max-width: 1200px) {
+        width: 100% !important;
+        padding: 3rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+      }
+      @media (max-width: 992px) {
+        padding: 3rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+      }
+      @media (max-width: 768px) {
+        padding: 2.5rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+      }
+      @media (max-width: 576px) {
+        width: 100% !important;
+        text-align: center;
+      }
+
+      .exact {
+        border-bottom: 1px solid rgba(128, 128, 128, 0.363);
+        border-radius: 1rem;
+        padding-bottom: 2rem;
+
+        @media (max-width: 1200px) {
+          text-align: center;
+          padding: 1rem;
+        }
+
+        > p {
+          font-size: 0.8rem;
+          font-weight: 300;
+          line-height: 1.4rem;
+
+          &:first-child {
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-top: 0px;
+          }
+        }
+      }
+
+      .infoTag {
+        .links {
+          padding: 1rem 1rem;
+
+          @media (max-width: 992px) {
+            padding: 1rem 1.5rem;
+          }
+          @media (max-width: 768px) {
+            padding: 1rem;
+          }
+
+          @media (max-width: 576px) {
+            text-align: left;
+          }
+
+          p {
+            font-size: 0.8rem;
+            cursor: pointer;
+            font-weight: 300;
+            margin-top: 0;
+
+            margin-bottom: 1.5rem;
+
+            &:hover {
+              opacity: 0.8;
+            }
+
+            &:first-child {
+              font-weight: 500;
+              font-size: 0.9rem;
+            }
+
+            @media (max-width: 1200px) {
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+  }
+
+  .clearfix {
+    display: inline-block;
+  }
+
+  html[xmlns] .clearfix {
+    display: block;
+  }
+
+  * html .clearfix {
+    height: 1%;
+  }
+
+  .smallFooter {
+    text-align: center;
+    font-weight: 300;
+    font-size: 0.8rem;
+    height: 2rem;
+
+    > p {
+      margin: auto;
     }
   }
 }

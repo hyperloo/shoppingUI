@@ -16,8 +16,9 @@ class HomePage extends Component {
           <button onClick={() => history.push("/sellers")}>Seller</button>
         </div>
         <p className="note">
-          <span>Guidelines:</span> &nbsp;&nbsp; Find {"</>"} icon on top right
-          below the message icon to see specifications
+          <span>Guidelines:</span> &nbsp;&nbsp; Please goto the top left corner
+          of top searchbar and click on "Lock"/"security" icons and click
+          "Secure Connection" then click "Disable Protection for now"
         </p>
       </div>
     );

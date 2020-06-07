@@ -14,6 +14,7 @@ import DescBox from "./DescBox";
 import ReviewSec from "./ReviewSec";
 import SimilarProducts from "./SimilarProducts";
 import CouldNot from "./Couldnot";
+import Footer from "./Footer";
 
 import "./Product.scss";
 // import { Loader } from "semantic-ui-react";
@@ -71,6 +72,7 @@ class ProductPage extends Component {
             <ReviewSec />
             <SimilarProducts />
             <CouldNot />
+            <Footer />
           </>
         )}
       </div>
