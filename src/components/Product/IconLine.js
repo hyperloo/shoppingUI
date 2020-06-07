@@ -1,6 +1,6 @@
 import React from "react";
 
-const IconLine = ({ name }) => {
+const IconLine = ({ name, history }) => {
   return (
     <div className="iconLine">
       <div className="sellerIcon">
@@ -13,7 +13,11 @@ const IconLine = ({ name }) => {
           </p>
         </div>
         <p></p>
-        <p className="moreBox">
+        <p
+          className="moreBox"
+          onClick={() => history.push("/sellers")}
+          style={{ cursor: "pointer" }}
+        >
           View more sellers (7){" "}
           <img src={require("../images/Seller.svg")} alt="seller more" />
         </p>

@@ -63,7 +63,7 @@ class ProductPage extends Component {
                 variant={product.variants}
               />
             </div>
-            <IconLine name={product.sellerName} />
+            <IconLine name={product.sellerName} history={history} />
             <DescBox
               specs={product.productSpecification}
               desc={product.productDescription}
