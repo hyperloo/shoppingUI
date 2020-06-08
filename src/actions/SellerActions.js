@@ -17,7 +17,7 @@ export const loadSellers = () => (dispatch, getState) => {
       dispatch({ type: SELLERS_LOADED, payload: res.data.otherSellerList });
     })
     .catch((err) => {
-      console.log("inside");
+      console.log(err);
       dispatch(returnErrors(err.response.message, err.response.status));
     });
 };
