@@ -13,9 +13,10 @@ export const loadSellers = () => (dispatch, getState) => {
         variantId: 6,
       },
     })
-    .then((res) =>
-      dispatch({ type: SELLERS_LOADED, payload: res.data.otherSellerList })
-    )
+    .then((res) => {
+      console.log("inside");
+      dispatch({ type: SELLERS_LOADED, payload: res.data.otherSellerList });
+    })
     .catch((err) => {
       dispatch(returnErrors(err.response.message, err.response.status));
     });
