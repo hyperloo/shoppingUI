@@ -14,10 +14,10 @@ export const loadSellers = () => (dispatch, getState) => {
       },
     })
     .then((res) => {
-      console.log("inside");
       dispatch({ type: SELLERS_LOADED, payload: res.data.otherSellerList });
     })
     .catch((err) => {
+      console.log("inside");
       dispatch(returnErrors(err.response.message, err.response.status));
     });
 };
