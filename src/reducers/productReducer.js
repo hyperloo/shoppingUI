@@ -13,6 +13,7 @@ export default function (state = initialState, action) {
         isLoading: true,
       };
     case PRODUCT_LOADED:
+      console.log("inside", action.payload);
       return {
         ...state,
         isLoading: false,
